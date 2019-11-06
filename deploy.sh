@@ -4,7 +4,7 @@ GIT_REV="$(git rev-parse HEAD)"&& \
 rm -rf dist && \
 rm -rf node_modules && \
 npm install && \
-NODE_ENV=prod npm run build && \
+npm run build && \
 cd dist/ && \
 git init && \
 git remote add origin git@github.com:mradkov/aeternity-aepp.git && \
